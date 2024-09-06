@@ -284,7 +284,7 @@ class Proyecto
 
                         if (Motomundo >= 1 && Motomundo <= 5)
                         {
-                            Console.Write("Ingrese la cantidad de Cosas que desee comprar (máximo 15): ");
+                            Console.Write("Ingrese la cantidad de Motos que desee comprar (máximo 15): ");
                             int cantidad = int.Parse(Console.ReadLine());
 
                             if (cantidad > 15)
@@ -378,7 +378,7 @@ class Proyecto
 
                         if (Marcazapatos >= 1 && Marcazapatos <= 7)
                         {
-                            Console.Write("Ingrese la cantidad de Marca de Zapatos que desee comprar (máximo 50): ");
+                            Console.Write("Ingrese la cantidad de Zapatos que desee comprar (máximo 50): ");
                             int cantidad = int.Parse(Console.ReadLine());
 
                             if (cantidad > 50)
