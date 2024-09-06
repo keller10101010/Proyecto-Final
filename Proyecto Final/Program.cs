@@ -34,16 +34,16 @@ class Proyecto
                     do
                     {
                         Console.WriteLine(" Ventas: LLantas");
-                        Console.WriteLine("1. LLantas Michelin - 1.300 Lps ");
-                        Console.WriteLine("2. LLantas Continental - 1.500 Lps ");
-                        Console.WriteLine("3. LLantas Goodyear - 1.800 Lps ");
-                        Console.WriteLine("4. LLantas Pirelli - 1.900 Lps ");
-                        Console.WriteLine("5. LLantas Bridgestone - 2.000 Lps ");
-                        Console.WriteLine("6. LLantas Yokohama - 2.100 Lps ");
-                        Console.WriteLine("7. LLantas Hankook - 2.200 Lps ");
-                        Console.WriteLine("8. LLantas Falken - 2.400 Lps ");
-                        Console.WriteLine("9. LLantas Toyo - 1.500 Lps ");
-                        Console.WriteLine("10.LLantas BF Goodrich - 2.500 Lps ");
+                        Console.WriteLine("1. LLantas Michelin - 1.300.00 Lps ");
+                        Console.WriteLine("2. LLantas Continental - 1.500.00 Lps ");
+                        Console.WriteLine("3. LLantas Goodyear - 1.800.00 Lps ");
+                        Console.WriteLine("4. LLantas Pirelli - 1.900.00 Lps ");
+                        Console.WriteLine("5. LLantas Bridgestone - 2.000.00 Lps ");
+                        Console.WriteLine("6. LLantas Yokohama - 2.100.00 Lps ");
+                        Console.WriteLine("7. LLantas Hankook - 2.200.00 Lps ");
+                        Console.WriteLine("8. LLantas Falken - 2.400.00 Lps ");
+                        Console.WriteLine("9. LLantas Toyo - 1.500.00 Lps ");
+                        Console.WriteLine("10.LLantas BF Goodrich - 2.500.00 Lps ");
                         Console.WriteLine("11.Volver Atras");
                         Console.Write("Seleccione la LLanta que desee Comprar:");
                         opcllantas = int.Parse(Console.ReadLine());
@@ -54,43 +54,43 @@ class Proyecto
                         switch (opcllantas)
                         {
                             case 1:
-                                precio = 1.300;
+                                precio = 1300;
                                 impuesto = 0.8;
                                 break;
                             case 2:
-                                precio = 1.500;
+                                precio = 1500;
                                 impuesto = 0.7;
                                 break;
                             case 3:
-                                precio = 1.800;
+                                precio = 1800;
                                 impuesto = 0.6;
                                 break;
                             case 4:
-                                precio = 1.900;
+                                precio = 1900;
                                 impuesto = 0.5;
                                 break;
                             case 5:
-                                precio = 2.000;
+                                precio = 2000;
                                 impuesto = 0.9;
                                 break;
                             case 6:
-                                precio = 2.100;
+                                precio = 2100;
                                 impuesto = 0.10;
                                 break;
                             case 7:
-                                precio = 2.200;
+                                precio = 2200;
                                 impuesto = 0.11;
                                 break;
                             case 8:
-                                precio = 2.400;
+                                precio = 2400;
                                 impuesto = 0.12;
                                 break;
                             case 9:
-                                precio = 1.500;
+                                precio = 1500;
                                 impuesto = 0.13;
                                 break;
                             case 10:
-                                precio = 2.500;
+                                precio = 2500;
                                 impuesto = 0.14;
                                 break;
 
@@ -117,12 +117,12 @@ class Proyecto
                             double precioFinal = (precioConImpuesto - (precioConImpuesto * descuento)) * cantidad;
 
 
-                            listaProductos.Add($"{( opcllantas == 1 ? "Michelin" : opcllantas == 2 ? "Continental " : "Goodyear")} x{cantidad}");
+                            listaProductos.Add($"{(opcllantas == 1 ? "Michelin" : opcllantas == 2 ? "Continental" : opcllantas == 3 ? "Goodyear" : opcllantas == 4 ? "Pirelli" : opcllantas == 5 ? "Bridgestone" : opcllantas == 6 ? "Yokohama" : opcllantas == 7 ? "Hankook" : opcllantas == 8 ? "Falken" : opcllantas == 8 ? "Falken" : "Toyo")} x{cantidad}"); 
                             listaPrecios.Add(precioFinal);
 
-                            Console.WriteLine($"Precio por unidad con impuesto: ${precioConImpuesto:F2}");
+                            Console.WriteLine($"Precio por unidad con impuesto: {precioConImpuesto:F2} Lempiras");
                             Console.WriteLine($"Descuento aplicado: {descuento * 100}%");
-                            Console.WriteLine($"Precio total por {cantidad} unidades: ${precioFinal:F2}");
+                            Console.WriteLine($"Precio total por {cantidad} unidades: {precioFinal:F2} Lempiras");
 
 
                             Console.Write("¿Desea seguir comprando? (s/n): ");
@@ -152,7 +152,7 @@ class Proyecto
                         Console.WriteLine("4. Refrigeradoras - 47.000 Lps ");
                         Console.WriteLine("5. Play station - 32.000 Lps ");
                         Console.WriteLine("6. Estufas - 40.000 Lps ");
-                        Console.WriteLine("7. Aires Acondicionados - 60.000 Lps ");
+                        Console.WriteLine("7. Aire Acondicionado - 60.000 Lps ");
                         Console.WriteLine("8. Regresar al menú principal");
                         Console.Write("Seleccione un producto:");
                         Jetsterio = int.Parse(Console.ReadLine());
@@ -163,31 +163,31 @@ class Proyecto
                         switch (Jetsterio)
                         {
                             case 1:
-                                precio = 25.000;
+                                precio = 25000;
                                 impuesto = 0.15;
                                 break;
                             case 2:
-                                precio = 15.000;
+                                precio = 15000;
                                 impuesto = 0.20;
                                 break;
                             case 3:
-                                precio = 21.000;
+                                precio = 21000;
                                 impuesto = 0.18;
                                 break;
                             case 4:
-                                precio = 47.000;
+                                precio = 47000;
                                 impuesto = 0.16;
                                 break;
                             case 5:
-                                precio = 32.000;
+                                precio = 32000;
                                 impuesto = 0.13;
                                 break;
                             case 6:
-                                precio = 40.000;
+                                precio = 40000;
                                 impuesto = 0.10;
                                 break;
                             case 7:
-                                precio = 60.000;
+                                precio = 60000;
                                 impuesto = 0.22;
                                 break;
 
@@ -213,12 +213,12 @@ class Proyecto
                             double descuento = CalcularDescuento(cantidad);
                             double precioFinal = (precioConImpuesto - (precioConImpuesto * descuento)) * cantidad;
 
-                            listaProductos.Add($"{(Jetsterio == 1 ? "Televisores" : Jetsterio == 2 ? "Computadoras" : "Tablets")} x{cantidad}");
+                            listaProductos.Add($"{(Jetsterio == 1 ? "Televisores" : Jetsterio == 2 ? "Computadoras" : Jetsterio == 3 ? "Tablets" : Jetsterio == 4 ? "Refrigeradoras" : Jetsterio == 5 ? "Play station" : Jetsterio == 6 ? "Estufas" : Jetsterio == 7 ? "Aire Acondicionado" : "")} x{cantidad}");
                             listaPrecios.Add(precioFinal);
 
-                            Console.WriteLine($"Precio por unidad con impuesto: ${precioConImpuesto:F2}");
+                            Console.WriteLine($"Precio por unidad con impuesto: {precioConImpuesto:F2} Lempiras");
                             Console.WriteLine($"Descuento aplicado: {descuento * 100}%");
-                            Console.WriteLine($"Precio total por {cantidad} unidades: ${precioFinal:F2}");
+                            Console.WriteLine($"Precio total por {cantidad} unidades: {precioFinal:F2} Lempiras");
 
                             Console.Write("¿Desea seguir comprando? (s/n): ");
                             string seguirComprando = Console.ReadLine().ToLower();
@@ -255,23 +255,23 @@ class Proyecto
                         switch (Motomundo)
                         {
                             case 1:
-                                precio = 47.990;
+                                precio = 47990;
                                 impuesto = 0.7;
                                 break;
                             case 2:
-                                precio = 110.990;
+                                precio = 110990;
                                 impuesto = 0.11;
                                 break;
                             case 3:
-                                precio = 136.990;
+                                precio = 136990;
                                 impuesto = 0.10;
                                 break;
                             case 4:
-                                precio = 83.990;
+                                precio = 83990;
                                 impuesto = 0.13;
                                 break;
                             case 5:
-                                precio = 38.990;
+                                precio = 38990;
                                 impuesto = 0.18;
                                 break;
 
@@ -297,12 +297,12 @@ class Proyecto
                             double descuento = CalcularDescuento(cantidad);
                             double precioFinal = (precioConImpuesto - (precioConImpuesto * descuento)) * cantidad;
 
-                            listaProductos.Add($"{(Motomundo == 1 ? "Trabajo" : Motomundo == 2 ? "Niños" : "Todo Terreno")} x{cantidad}");
+                            listaProductos.Add($"{(Motomundo== 1 ? "Trabajo" : Motomundo == 2 ? "Niños" : Motomundo == 3 ? "Todo Terreno" : Motomundo == 4 ? "Deportivas" : Motomundo == 5 ? "Automaticas" : "")} x{cantidad}");
                             listaPrecios.Add(precioFinal);
 
-                            Console.WriteLine($"Precio por unidad con impuesto: ${precioConImpuesto:F2}");
+                            Console.WriteLine($"Precio por unidad con impuesto: {precioConImpuesto:F2} Lempiras");
                             Console.WriteLine($"Descuento aplicado: {descuento * 100}%");
-                            Console.WriteLine($"Precio total por {cantidad} unidades: ${precioFinal:F2}");
+                            Console.WriteLine($"Precio total por {cantidad} unidades: {precioFinal:F2} Lempiras");
 
                             Console.Write("¿Desea seguir comprando? (s/n): ");
                             string seguirComprando = Console.ReadLine().ToLower();
@@ -341,7 +341,7 @@ class Proyecto
                         switch (Marcazapatos)
                         {
                             case 1:
-                                precio = 3.349;
+                                precio = 3349;
                                 impuesto = 0.06;
                                 break;
                             case 2:
@@ -391,12 +391,12 @@ class Proyecto
                             double descuento = CalcularDescuento(cantidad);
                             double precioFinal = (precioConImpuesto - (precioConImpuesto * descuento)) * cantidad;
 
-                            listaProductos.Add($"{(Marcazapatos == 1 ? "Jordan" : Marcazapatos == 2 ? "Timberland" : "Adidas")} x{cantidad}");
+                            listaProductos.Add($"{(Marcazapatos == 1 ? "Jordan" : Marcazapatos == 2 ? "Timberland" : Marcazapatos == 3 ? "Adidas" : Marcazapatos == 4 ? "Nike" : Marcazapatos == 5 ? "Puma" : Marcazapatos == 6 ? "Red wing" : Marcazapatos == 7 ? "Botas" : "")} x{cantidad}");
                             listaPrecios.Add(precioFinal);
 
-                            Console.WriteLine($"Precio por unidad con impuesto: ${precioConImpuesto:F2}");
+                            Console.WriteLine($"Precio por unidad con impuesto: {precioConImpuesto:F2} Lempiras");
                             Console.WriteLine($"Descuento aplicado: {descuento * 100}%");
-                            Console.WriteLine($"Precio total por {cantidad} unidades: ${precioFinal:F2}");
+                            Console.WriteLine($"Precio total por {cantidad} unidades: {precioFinal:F2} Lempiras");
 
                             Console.Write("¿Desea seguir comprando? (s/n): ");
                             string seguirComprando = Console.ReadLine().ToLower();
@@ -455,12 +455,12 @@ class Proyecto
 
         for (int i = 0; i < listaProductos.Count; i++)
         {
-            Console.WriteLine($"{listaProductos[i]} - ${listaPrecios[i]:F2}");
+            Console.WriteLine($"{listaProductos[i]} - {listaPrecios[i]:F2}  Lempiras");
             total += listaPrecios[i];
         }
 
         Console.WriteLine($"----------------------------------");
-        Console.WriteLine($"TOTAL A PAGAR: ${total:F2}");
+        Console.WriteLine($"TOTAL A PAGAR: {total:F2}  Lempiras");
         Console.WriteLine("¡Gracias por su compra!");
     }
 }
